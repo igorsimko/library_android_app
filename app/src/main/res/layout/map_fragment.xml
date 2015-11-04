@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fillViewport="true">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/linearZoom">
+
+        <com.example.bcapp.view.VScroll
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:id="@+id/vScroll">
+
+            <com.example.bcapp.view.HScroll
+                    android:id="@+id/hScroll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+
+                <view class="com.example.bcapp.view.MapHolder"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/mapView"
+                        />
+
+            </com.example.bcapp.view.HScroll>
+
+        </com.example.bcapp.view.VScroll>
+
+    </LinearLayout>
+</RelativeLayout>
